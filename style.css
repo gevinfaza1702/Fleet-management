@@ -1,0 +1,207 @@
+/* Sidebar */
+#sidebar-wrapper {
+  min-height: 100vh;
+  width: 250px;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #343a40, #212529);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: -250px;
+}
+
+/* Sidebar Heading */
+.sidebar-heading {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Sidebar List Items */
+.list-group-item {
+  transition: all 0.3s ease;
+  border: none;
+  font-weight: 500;
+  color: #ddd;
+  display: flex;
+  align-items: center;
+}
+
+.list-group-item i {
+  margin-right: 10px;
+}
+
+.list-group-item:hover {
+  background-color: #495057;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 10px 20px;
+}
+
+.navbar h4 {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #343a40;
+}
+
+/* Content Area */
+#page-content-wrapper {
+  width: 100%;
+  padding: 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* Feature Cards */
+.card {
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Titles */
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #343a40;
+}
+
+/* Progress Bars */
+.progress {
+  height: 8px; /* Lebih ramping */
+  border-radius: 5px;
+  background-color: #e9ecef;
+}
+
+.progress-bar {
+  border-radius: 5px;
+  transition: width 0.6s ease;
+}
+
+/* Toggle Button */
+#menu-toggle {
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#menu-toggle:hover {
+  background-color: #0056b3;
+}
+
+/* Notification Icon */
+.navbar .fa-bell {
+  font-size: 1.3rem;
+  color: #6c757d;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.navbar .fa-bell:hover {
+  color: #007bff;
+}
+
+/* User Dropdown */
+.navbar .dropdown-menu {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Welcome Section */
+.text-center h2 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #343a40;
+  margin-bottom: 10px;
+}
+
+.text-center p {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+/* List of Benefits */
+ul.list-group li {
+  font-size: 1rem;
+  padding: 12px;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+ul.list-group li i {
+  color: #28a745;
+  margin-right: 10px;
+}
+
+/* Benefit Section */
+.benefit-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #f8f9fa;
+  color: #6c757d;
+  font-size: 0.9rem;
+  border-top: 1px solid #dee2e6;
+  margin-top: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #sidebar-wrapper {
+    width: 200px;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -200px;
+  }
+
+  .navbar h4 {
+    font-size: 1.5rem;
+  }
+
+  .text-center h2 {
+    font-size: 2rem;
+  }
+
+  /* Notifikasi */
+  .navbar .fa-bell {
+    position: relative;
+    font-size: 1.5rem;
+  }
+
+  .navbar .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 0.7rem;
+    padding: 3px 6px;
+    border-radius: 50%;
+  }
+}
